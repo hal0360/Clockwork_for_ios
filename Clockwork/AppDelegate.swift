@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+      //  UserDefaults.standard.register(defaults: ["currentActivity" : ""])
+        UserDefaults.standard.register(defaults: ["startTime" : Date()])
+        
+        /*
+        let newSiteEntity: StaffSiteModel = NSEntityDescription.insertNewObject(forEntityName: "StaffSiteModel", into: DatabaseController.getContex()) as! StaffSiteModel
+        newSiteEntity.name = "office"
+        newSiteEntity.token = "blah"
+        DatabaseController.saveContext()
+         
+         
+         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+         self.siteArray.insert(self.scannedSIte!, at: 0)
+         self.workerCollectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
+         }
+         
+         
+         let popLast = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LastSeenVC") as! LastSeenViewController
+         
+         self.parent?.parent?.addChildViewController(popLast)
+         popLast.view.frame = (self.parent?.parent?.view.frame)!
+         self.parent?.parent?.view.addSubview(popLast.view)
+         popLast.didMove(toParentViewController: self.parent?.parent)
+         
+         
+         
+         
+         */
+        
+        //  let date = Date()
+        // let formatter = DateFormatter()
+        //  formatter.dateFormat = "HH:mm"
+        // let resultdt = formatter.string(from: date)
+        // print(resultdt)
+        
+        
+        
+        
         return true
     }
 
@@ -30,7 +68,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
+        
+        /*        var newSite: Site
+         let myFetch: NSFetchRequest<StaffSiteModel> = StaffSiteModel.fetchRequest()
+         do{
+         let stuffSites = try DatabaseController.getContex().fetch(myFetch)
+         for stuffSite in stuffSites as [StaffSiteModel]{
+         newSite = Site()
+         newSite.model = stuffSite
+         siteArray.append(newSite)
+         siteModels.append(stuffSite)
+         }
+         }
+         catch{
+         print("cannot fecth sites")
+         }
+         
+         
+         let myyFetch: NSFetchRequest<StaffWorkStampModel> = StaffWorkStampModel.fetchRequest()
+         do{
+         let stuffStamps = try DatabaseController.getContex().fetch(myyFetch)
+         for stuffStamp in stuffStamps as [StaffWorkStampModel]{
+         print(stuffStamp.comment ?? "not found")
+         
+         let formatter = DateFormatter()
+         formatter.dateFormat = "HH:mm"
+         
+         print(formatter.string(from: stuffStamp.startTime as! Date))
+         print(formatter.string(from: stuffStamp.endTime as! Date))
+         }
+         }
+         catch{
+         print("cannot fecth stamps")
+         }*/
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -40,7 +112,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

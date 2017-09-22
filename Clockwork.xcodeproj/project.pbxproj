@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3046653E913D9F865B3050A4 /* Pods_ClockworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF9EC39D14FE139B89A9616 /* Pods_ClockworkTests.framework */; };
+		4704B5411F663C0700F404A5 /* MyTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704B5401F663C0700F404A5 /* MyTeamViewController.swift */; };
+		4704B5431F6690AD00F404A5 /* MyTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704B5421F6690AD00F404A5 /* MyTeamCell.swift */; };
+		4704B5451F67269A00F404A5 /* DaySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704B5441F67269A00F404A5 /* DaySelectViewController.swift */; };
 		4748BB791E6412F100D50413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BB781E6412F100D50413 /* AppDelegate.swift */; };
 		4748BB7B1E6412F100D50413 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BB7A1E6412F100D50413 /* ViewController.swift */; };
 		4748BB7E1E6412F100D50413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4748BB7C1E6412F100D50413 /* Main.storyboard */; };
@@ -14,6 +18,62 @@
 		4748BB831E6412F100D50413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4748BB811E6412F100D50413 /* LaunchScreen.storyboard */; };
 		4748BB8E1E6412F200D50413 /* ClockworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BB8D1E6412F200D50413 /* ClockworkTests.swift */; };
 		4748BB991E6412F200D50413 /* ClockworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BB981E6412F200D50413 /* ClockworkUITests.swift */; };
+		4748BBB41E695F4A00D50413 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4748BBB21E695F4A00D50413 /* Model.xcdatamodeld */; };
+		4748BBF31E6A54A800D50413 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BBF21E6A54A800D50413 /* DatabaseController.swift */; };
+		4748BBF51E6D129D00D50413 /* WorkerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BBF41E6D129D00D50413 /* WorkerHomeViewController.swift */; };
+		4748BBF71E6D18A100D50413 /* WorkerSiteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BBF61E6D18A100D50413 /* WorkerSiteCollectionViewCell.swift */; };
+		4748BBF91E6D39BE00D50413 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BBF81E6D39BE00D50413 /* ScannerViewController.swift */; };
+		4748BBFE1E71754300D50413 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BBFD1E71754300D50413 /* Toast.swift */; };
+		4748BC001E72025B00D50413 /* Hamburger Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BBFF1E72025B00D50413 /* Hamburger Icon.png */; };
+		4748BC071E727DCB00D50413 /* Export Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC011E727DCB00D50413 /* Export Icon.png */; };
+		4748BC081E727DCB00D50413 /* Home Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC021E727DCB00D50413 /* Home Icon.png */; };
+		4748BC091E727DCB00D50413 /* My Team Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC031E727DCB00D50413 /* My Team Icon.png */; };
+		4748BC0A1E727DCB00D50413 /* Profile Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC041E727DCB00D50413 /* Profile Icon.png */; };
+		4748BC0B1E727DCB00D50413 /* Remove Ads Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC051E727DCB00D50413 /* Remove Ads Icon.png */; };
+		4748BC0C1E727DCB00D50413 /* Settings Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC061E727DCB00D50413 /* Settings Icon.png */; };
+		4748BC0E1E7402F500D50413 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BC0D1E7402F500D50413 /* CommentViewController.swift */; };
+		4748BC101E75F3E100D50413 /* WorkerHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4748BC0F1E75F3E100D50413 /* WorkerHistoryViewController.swift */; };
+		4748BC121E761A8C00D50413 /* ClockWork Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC111E761A8C00D50413 /* ClockWork Logo.png */; };
+		4748BC141E761B1A00D50413 /* Logo - Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 4748BC131E761B1A00D50413 /* Logo - Transparent.png */; };
+		4749FD9F1EFD2F050047E184 /* Icon - Company Name.png in Resources */ = {isa = PBXBuildFile; fileRef = 4749FD991EFD2F050047E184 /* Icon - Company Name.png */; };
+		4749FDA01EFD2F050047E184 /* Icon - Email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4749FD9A1EFD2F050047E184 /* Icon - Email.png */; };
+		4749FDA11EFD2F050047E184 /* Icon - Sign Up Business Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4749FD9B1EFD2F050047E184 /* Icon - Sign Up Business Button.png */; };
+		4749FDA21EFD2F050047E184 /* Icon - Sign Up Staff Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4749FD9C1EFD2F050047E184 /* Icon - Sign Up Staff Button.png */; };
+		4749FDA31EFD2F050047E184 /* Icon - Your Name Field.png in Resources */ = {isa = PBXBuildFile; fileRef = 4749FD9D1EFD2F050047E184 /* Icon - Your Name Field.png */; };
+		4749FDA41EFD2F050047E184 /* Lock Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4749FD9E1EFD2F050047E184 /* Lock Icon.png */; };
+		474A5F651F0397030088124B /* WorkerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A5F641F0397030088124B /* WorkerSettingViewController.swift */; };
+		474A5F671F03A1530088124B /* Pref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A5F661F03A1530088124B /* Pref.swift */; };
+		474A5F691F03A9500088124B /* Sql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A5F681F03A9500088124B /* Sql.swift */; };
+		476BB99A1EBC3083009E7AE1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BB9991EBC3083009E7AE1 /* Item.swift */; };
+		478680971F04B62E00054479 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478680961F04B62E00054479 /* StoreKit.framework */; };
+		478680991F04B63800054479 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478680981F04B63800054479 /* GameKit.framework */; };
+		4786809D1F04C6F800054479 /* StockSnap_ZP1TM2CZCK - Copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4786809C1F04C6F800054479 /* StockSnap_ZP1TM2CZCK - Copy.jpg */; };
+		478D7C781F01DD410095A868 /* MyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478D7C771F01DD410095A868 /* MyDate.swift */; };
+		47A419CD1F58104200EDD05B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419CC1F58104200EDD05B /* Setting.swift */; };
+		47A419D21F581CAD00EDD05B /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419D11F581CAD00EDD05B /* LoginInfo.swift */; };
+		47A419D41F58226700EDD05B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419D31F58226700EDD05B /* Profile.swift */; };
+		47A419D61F582A4700EDD05B /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419D51F582A4600EDD05B /* Act.swift */; };
+		47A419D81F58B59600EDD05B /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419D71F58B59600EDD05B /* TimePickerViewController.swift */; };
+		47A419DA1F58CBBE00EDD05B /* processbar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 47A419D91F58CBBE00EDD05B /* processbar.gif */; };
+		47A419DC1F590BC200EDD05B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419DB1F590BC200EDD05B /* LoadingViewController.swift */; };
+		47A419DE1F5A182D00EDD05B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419DD1F5A182D00EDD05B /* Api.swift */; };
+		47A419E01F5BE62700EDD05B /* GetShiftInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419DF1F5BE62700EDD05B /* GetShiftInfo.swift */; };
+		47A419E21F5BFD0200EDD05B /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A419E11F5BFD0200EDD05B /* LoginResult.swift */; };
+		47A980061EFF5EF700CE8802 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A980051EFF5EF700CE8802 /* Project.swift */; };
+		47A980081EFF6E6D00CE8802 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A980071EFF6E6D00CE8802 /* Shift.swift */; };
+		47A9800A1EFF701100CE8802 /* ItemMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A980091EFF701100CE8802 /* ItemMaker.swift */; };
+		47B312651F045D1500ACB3A8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B312641F045D1500ACB3A8 /* SignInViewController.swift */; };
+		47BFA1121EFC6C9D00DD6FA3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BFA1111EFC6C9D00DD6FA3 /* Request.swift */; };
+		47CD1C0E1F0340C800F7EE4F /* WorkerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CD1C0D1F0340C800F7EE4F /* WorkerProfileViewController.swift */; };
+		47D0D4AB1EA80F4800466759 /* abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D0D4AA1EA80F4800466759 /* abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png */; };
+		47D3F8F91EDACFF800AC3E26 /* ClockWork Words.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D3F8F81EDACFF800AC3E26 /* ClockWork Words.png */; };
+		47D3F8FD1EDBC7F600AC3E26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D3F8FC1EDBC7F600AC3E26 /* SignUpViewController.swift */; };
+		47D526A51EDE93FF009F9021 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D526A41EDE93FF009F9021 /* StartViewController.swift */; };
+		47D526A91EDF7F47009F9021 /* WorkerStampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D526A81EDF7F47009F9021 /* WorkerStampCollectionViewCell.swift */; };
+		47E6A7361F6D0C08004CB536 /* AddSftaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E6A7351F6D0C08004CB536 /* AddSftaffViewController.swift */; };
+		47F67E471F031D3900CEBD7A /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F67E461F031D3900CEBD7A /* ExportViewController.swift */; };
+		C9E7EA85C2456B34669F24FA /* Pods_Clockwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C4FB1E06532072958BA86B /* Pods_Clockwork.framework */; };
+		E34E5942117602BCBA6EF45E /* Pods_ClockworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D50EA5DB4A3F2EECDC7199 /* Pods_ClockworkUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +94,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13DEAD02C53337B491859A05 /* Pods-Clockwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clockwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clockwork/Pods-Clockwork.debug.xcconfig"; sourceTree = "<group>"; };
+		182900AA0AE562FAE0168FAD /* Pods-ClockworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClockworkTests/Pods-ClockworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CF9EC39D14FE139B89A9616 /* Pods_ClockworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClockworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4704B5401F663C0700F404A5 /* MyTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTeamViewController.swift; sourceTree = "<group>"; };
+		4704B5421F6690AD00F404A5 /* MyTeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTeamCell.swift; sourceTree = "<group>"; };
+		4704B5441F67269A00F404A5 /* DaySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySelectViewController.swift; sourceTree = "<group>"; };
 		4748BB751E6412F100D50413 /* Clockwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clockwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4748BB781E6412F100D50413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4748BB7A1E6412F100D50413 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +113,67 @@
 		4748BB941E6412F200D50413 /* ClockworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4748BB981E6412F200D50413 /* ClockworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkUITests.swift; sourceTree = "<group>"; };
 		4748BB9A1E6412F200D50413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4748BBB31E695F4A00D50413 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4748BBF21E6A54A800D50413 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		4748BBF41E6D129D00D50413 /* WorkerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerHomeViewController.swift; sourceTree = "<group>"; };
+		4748BBF61E6D18A100D50413 /* WorkerSiteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerSiteCollectionViewCell.swift; sourceTree = "<group>"; };
+		4748BBF81E6D39BE00D50413 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		4748BBFD1E71754300D50413 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		4748BBFF1E72025B00D50413 /* Hamburger Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hamburger Icon.png"; path = "../../../Downloads/Hamburger Icon.png"; sourceTree = "<group>"; };
+		4748BC011E727DCB00D50413 /* Export Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Export Icon.png"; path = "../../../Downloads/Menu Icons/Export Icon.png"; sourceTree = "<group>"; };
+		4748BC021E727DCB00D50413 /* Home Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home Icon.png"; path = "../../../Downloads/Menu Icons/Home Icon.png"; sourceTree = "<group>"; };
+		4748BC031E727DCB00D50413 /* My Team Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "My Team Icon.png"; path = "../../../Downloads/Menu Icons/My Team Icon.png"; sourceTree = "<group>"; };
+		4748BC041E727DCB00D50413 /* Profile Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Profile Icon.png"; path = "../../../Downloads/Menu Icons/Profile Icon.png"; sourceTree = "<group>"; };
+		4748BC051E727DCB00D50413 /* Remove Ads Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Remove Ads Icon.png"; path = "../../../Downloads/Menu Icons/Remove Ads Icon.png"; sourceTree = "<group>"; };
+		4748BC061E727DCB00D50413 /* Settings Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings Icon.png"; path = "../../../Downloads/Menu Icons/Settings Icon.png"; sourceTree = "<group>"; };
+		4748BC0D1E7402F500D50413 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		4748BC0F1E75F3E100D50413 /* WorkerHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerHistoryViewController.swift; sourceTree = "<group>"; };
+		4748BC111E761A8C00D50413 /* ClockWork Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ClockWork Logo.png"; path = "../../../Downloads/Logo & App Icon/ClockWork Logo.png"; sourceTree = "<group>"; };
+		4748BC131E761B1A00D50413 /* Logo - Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo - Transparent.png"; path = "../../../Downloads/Logo & App Icon/Logo - Transparent.png"; sourceTree = "<group>"; };
+		4749FD991EFD2F050047E184 /* Icon - Company Name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon - Company Name.png"; path = "../../../Downloads/Sign Up Icons/Icon - Company Name.png"; sourceTree = "<group>"; };
+		4749FD9A1EFD2F050047E184 /* Icon - Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon - Email.png"; path = "../../../Downloads/Sign Up Icons/Icon - Email.png"; sourceTree = "<group>"; };
+		4749FD9B1EFD2F050047E184 /* Icon - Sign Up Business Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon - Sign Up Business Button.png"; path = "../../../Downloads/Sign Up Icons/Icon - Sign Up Business Button.png"; sourceTree = "<group>"; };
+		4749FD9C1EFD2F050047E184 /* Icon - Sign Up Staff Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon - Sign Up Staff Button.png"; path = "../../../Downloads/Sign Up Icons/Icon - Sign Up Staff Button.png"; sourceTree = "<group>"; };
+		4749FD9D1EFD2F050047E184 /* Icon - Your Name Field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon - Your Name Field.png"; path = "../../../Downloads/Sign Up Icons/Icon - Your Name Field.png"; sourceTree = "<group>"; };
+		4749FD9E1EFD2F050047E184 /* Lock Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Lock Icon.png"; path = "../../../Downloads/Sign Up Icons/Lock Icon.png"; sourceTree = "<group>"; };
+		474A5F641F0397030088124B /* WorkerSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerSettingViewController.swift; sourceTree = "<group>"; };
+		474A5F661F03A1530088124B /* Pref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pref.swift; sourceTree = "<group>"; };
+		474A5F681F03A9500088124B /* Sql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sql.swift; sourceTree = "<group>"; };
+		476BB9991EBC3083009E7AE1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		478680961F04B62E00054479 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		478680981F04B63800054479 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		4786809C1F04C6F800054479 /* StockSnap_ZP1TM2CZCK - Copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "StockSnap_ZP1TM2CZCK - Copy.jpg"; path = "../../../Downloads/StockSnap_ZP1TM2CZCK - Copy.jpg"; sourceTree = "<group>"; };
+		478D7C771F01DD410095A868 /* MyDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDate.swift; sourceTree = "<group>"; };
+		47A419CC1F58104200EDD05B /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		47A419D11F581CAD00EDD05B /* LoginInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
+		47A419D31F58226700EDD05B /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		47A419D51F582A4600EDD05B /* Act.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
+		47A419D71F58B59600EDD05B /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		47A419D91F58CBBE00EDD05B /* processbar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = processbar.gif; path = ../../processbar.gif; sourceTree = "<group>"; };
+		47A419DB1F590BC200EDD05B /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		47A419DD1F5A182D00EDD05B /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		47A419DF1F5BE62700EDD05B /* GetShiftInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetShiftInfo.swift; sourceTree = "<group>"; };
+		47A419E11F5BFD0200EDD05B /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		47A980051EFF5EF700CE8802 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		47A980071EFF6E6D00CE8802 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		47A980091EFF701100CE8802 /* ItemMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemMaker.swift; sourceTree = "<group>"; };
+		47B312641F045D1500ACB3A8 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		47BFA1111EFC6C9D00DD6FA3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		47CD1C0D1F0340C800F7EE4F /* WorkerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerProfileViewController.swift; sourceTree = "<group>"; };
+		47D0D4AA1EA80F4800466759 /* abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png"; path = "../../../Desktop/abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png"; sourceTree = "<group>"; };
+		47D3F8F61EDACA7D00AC3E26 /* Logo - Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo - Transparent.png"; path = "../../../Downloads/Logo & App Icon/Logo - Transparent.png"; sourceTree = "<group>"; };
+		47D3F8F81EDACFF800AC3E26 /* ClockWork Words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ClockWork Words.png"; path = "../../../Downloads/Logo & App Icon/ClockWork Words.png"; sourceTree = "<group>"; };
+		47D3F8FC1EDBC7F600AC3E26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		47D526A41EDE93FF009F9021 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		47D526A81EDF7F47009F9021 /* WorkerStampCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerStampCollectionViewCell.swift; sourceTree = "<group>"; };
+		47E6A7351F6D0C08004CB536 /* AddSftaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSftaffViewController.swift; sourceTree = "<group>"; };
+		47F67E461F031D3900CEBD7A /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		7DDB597BE5518A9D719784C1 /* Pods-Clockwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clockwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clockwork/Pods-Clockwork.release.xcconfig"; sourceTree = "<group>"; };
+		B9C4FB1E06532072958BA86B /* Pods_Clockwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clockwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D6BE948084ED3B2DC72DB0 /* Pods-ClockworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockworkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClockworkUITests/Pods-ClockworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3BF18E0F0E7DE1361CB3F1F /* Pods-ClockworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClockworkTests/Pods-ClockworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6E1E290DF2BBC39980472D9 /* Pods-ClockworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClockworkUITests/Pods-ClockworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6D50EA5DB4A3F2EECDC7199 /* Pods_ClockworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClockworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +181,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478680991F04B63800054479 /* GameKit.framework in Frameworks */,
+				C9E7EA85C2456B34669F24FA /* Pods_Clockwork.framework in Frameworks */,
+				478680971F04B62E00054479 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3046653E913D9F865B3050A4 /* Pods_ClockworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +199,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34E5942117602BCBA6EF45E /* Pods_ClockworkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A58ECA6B9DA8C29044858E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13DEAD02C53337B491859A05 /* Pods-Clockwork.debug.xcconfig */,
+				7DDB597BE5518A9D719784C1 /* Pods-Clockwork.release.xcconfig */,
+				182900AA0AE562FAE0168FAD /* Pods-ClockworkTests.debug.xcconfig */,
+				E3BF18E0F0E7DE1361CB3F1F /* Pods-ClockworkTests.release.xcconfig */,
+				D6D6BE948084ED3B2DC72DB0 /* Pods-ClockworkUITests.debug.xcconfig */,
+				E6E1E290DF2BBC39980472D9 /* Pods-ClockworkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4748BB6C1E6412F100D50413 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +226,8 @@
 				4748BB8C1E6412F200D50413 /* ClockworkTests */,
 				4748BB971E6412F200D50413 /* ClockworkUITests */,
 				4748BB761E6412F100D50413 /* Products */,
+				1A58ECA6B9DA8C29044858E0 /* Pods */,
+				D67DC5368CF70E186E147F38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +244,37 @@
 		4748BB771E6412F100D50413 /* Clockwork */ = {
 			isa = PBXGroup;
 			children = (
+				47A419CE1F581C3E00EDD05B /* servObj */,
+				47A419CB1F580FDD00EDD05B /* temps */,
+				4748BBFC1E71752D00D50413 /* tools */,
+				4748BBAF1E69550500D50413 /* models */,
+				4748BBA81E642DC200D50413 /* images */,
 				4748BB781E6412F100D50413 /* AppDelegate.swift */,
 				4748BB7A1E6412F100D50413 /* ViewController.swift */,
 				4748BB7C1E6412F100D50413 /* Main.storyboard */,
 				4748BB7F1E6412F100D50413 /* Assets.xcassets */,
 				4748BB811E6412F100D50413 /* LaunchScreen.storyboard */,
 				4748BB841E6412F100D50413 /* Info.plist */,
+				4748BBB21E695F4A00D50413 /* Model.xcdatamodeld */,
+				4748BBF21E6A54A800D50413 /* DatabaseController.swift */,
+				4748BBF41E6D129D00D50413 /* WorkerHomeViewController.swift */,
+				4748BBF61E6D18A100D50413 /* WorkerSiteCollectionViewCell.swift */,
+				4748BBF81E6D39BE00D50413 /* ScannerViewController.swift */,
+				4748BC0D1E7402F500D50413 /* CommentViewController.swift */,
+				4748BC0F1E75F3E100D50413 /* WorkerHistoryViewController.swift */,
+				47D3F8FC1EDBC7F600AC3E26 /* SignUpViewController.swift */,
+				47D526A41EDE93FF009F9021 /* StartViewController.swift */,
+				47D526A81EDF7F47009F9021 /* WorkerStampCollectionViewCell.swift */,
+				47F67E461F031D3900CEBD7A /* ExportViewController.swift */,
+				47CD1C0D1F0340C800F7EE4F /* WorkerProfileViewController.swift */,
+				474A5F641F0397030088124B /* WorkerSettingViewController.swift */,
+				47B312641F045D1500ACB3A8 /* SignInViewController.swift */,
+				47A419D71F58B59600EDD05B /* TimePickerViewController.swift */,
+				47A419DB1F590BC200EDD05B /* LoadingViewController.swift */,
+				4704B5401F663C0700F404A5 /* MyTeamViewController.swift */,
+				4704B5421F6690AD00F404A5 /* MyTeamCell.swift */,
+				4704B5441F67269A00F404A5 /* DaySelectViewController.swift */,
+				47E6A7351F6D0C08004CB536 /* AddSftaffViewController.swift */,
 			);
 			path = Clockwork;
 			sourceTree = "<group>";
@@ -125,6 +297,89 @@
 			path = ClockworkUITests;
 			sourceTree = "<group>";
 		};
+		4748BBA81E642DC200D50413 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4749FD991EFD2F050047E184 /* Icon - Company Name.png */,
+				4749FD9A1EFD2F050047E184 /* Icon - Email.png */,
+				4749FD9B1EFD2F050047E184 /* Icon - Sign Up Business Button.png */,
+				4749FD9C1EFD2F050047E184 /* Icon - Sign Up Staff Button.png */,
+				4786809C1F04C6F800054479 /* StockSnap_ZP1TM2CZCK - Copy.jpg */,
+				4749FD9E1EFD2F050047E184 /* Lock Icon.png */,
+				47D0D4AA1EA80F4800466759 /* abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png */,
+				47A419D91F58CBBE00EDD05B /* processbar.gif */,
+				47D3F8F61EDACA7D00AC3E26 /* Logo - Transparent.png */,
+				4749FD9D1EFD2F050047E184 /* Icon - Your Name Field.png */,
+				4748BC011E727DCB00D50413 /* Export Icon.png */,
+				47D3F8F81EDACFF800AC3E26 /* ClockWork Words.png */,
+				4748BC021E727DCB00D50413 /* Home Icon.png */,
+				4748BC111E761A8C00D50413 /* ClockWork Logo.png */,
+				4748BC131E761B1A00D50413 /* Logo - Transparent.png */,
+				4748BC031E727DCB00D50413 /* My Team Icon.png */,
+				4748BC041E727DCB00D50413 /* Profile Icon.png */,
+				4748BC051E727DCB00D50413 /* Remove Ads Icon.png */,
+				4748BC061E727DCB00D50413 /* Settings Icon.png */,
+				4748BBFF1E72025B00D50413 /* Hamburger Icon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		4748BBAF1E69550500D50413 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				476BB9991EBC3083009E7AE1 /* Item.swift */,
+				47A980051EFF5EF700CE8802 /* Project.swift */,
+				47A980071EFF6E6D00CE8802 /* Shift.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		4748BBFC1E71752D00D50413 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				4748BBFD1E71754300D50413 /* Toast.swift */,
+				47BFA1111EFC6C9D00DD6FA3 /* Request.swift */,
+				47A980091EFF701100CE8802 /* ItemMaker.swift */,
+				478D7C771F01DD410095A868 /* MyDate.swift */,
+				474A5F661F03A1530088124B /* Pref.swift */,
+				474A5F681F03A9500088124B /* Sql.swift */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		47A419CB1F580FDD00EDD05B /* temps */ = {
+			isa = PBXGroup;
+			children = (
+				47A419CC1F58104200EDD05B /* Setting.swift */,
+				47A419D31F58226700EDD05B /* Profile.swift */,
+				47A419D51F582A4600EDD05B /* Act.swift */,
+				47A419DD1F5A182D00EDD05B /* Api.swift */,
+			);
+			name = temps;
+			sourceTree = "<group>";
+		};
+		47A419CE1F581C3E00EDD05B /* servObj */ = {
+			isa = PBXGroup;
+			children = (
+				47A419D11F581CAD00EDD05B /* LoginInfo.swift */,
+				47A419DF1F5BE62700EDD05B /* GetShiftInfo.swift */,
+				47A419E11F5BFD0200EDD05B /* LoginResult.swift */,
+			);
+			name = servObj;
+			sourceTree = "<group>";
+		};
+		D67DC5368CF70E186E147F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				478680981F04B63800054479 /* GameKit.framework */,
+				478680961F04B62E00054479 /* StoreKit.framework */,
+				B9C4FB1E06532072958BA86B /* Pods_Clockwork.framework */,
+				3CF9EC39D14FE139B89A9616 /* Pods_ClockworkTests.framework */,
+				F6D50EA5DB4A3F2EECDC7199 /* Pods_ClockworkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4748BB9D1E6412F200D50413 /* Build configuration list for PBXNativeTarget "Clockwork" */;
 			buildPhases = (
+				1A0FB68EFA3514966206CE6E /* [CP] Check Pods Manifest.lock */,
 				4748BB711E6412F100D50413 /* Sources */,
 				4748BB721E6412F100D50413 /* Frameworks */,
 				4748BB731E6412F100D50413 /* Resources */,
+				9F08C2B78BDBC6CAB5C79F1D /* [CP] Embed Pods Frameworks */,
+				B8F032F96C96C1A92E7C221C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4748BBA01E6412F200D50413 /* Build configuration list for PBXNativeTarget "ClockworkTests" */;
 			buildPhases = (
+				72FE78D5BB490DC86A38DC97 /* [CP] Check Pods Manifest.lock */,
 				4748BB851E6412F200D50413 /* Sources */,
 				4748BB861E6412F200D50413 /* Frameworks */,
 				4748BB871E6412F200D50413 /* Resources */,
+				1C23C76E1C371F55FE4A1480 /* [CP] Embed Pods Frameworks */,
+				DDBF045E17D83C7619A128AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +428,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4748BBA31E6412F200D50413 /* Build configuration list for PBXNativeTarget "ClockworkUITests" */;
 			buildPhases = (
+				D47DB685CD2E4F86AB9F9AA3 /* [CP] Check Pods Manifest.lock */,
 				4748BB901E6412F200D50413 /* Sources */,
 				4748BB911E6412F200D50413 /* Frameworks */,
 				4748BB921E6412F200D50413 /* Resources */,
+				B7F58CCA4B25DB89EC198B30 /* [CP] Embed Pods Frameworks */,
+				370AAA765C48688C557B3ADE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +457,16 @@
 				TargetAttributes = {
 					4748BB741E6412F100D50413 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ADSE6Z7B6Q;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					4748BB881E6412F200D50413 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -232,9 +505,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4748BC141E761B1A00D50413 /* Logo - Transparent.png in Resources */,
+				4748BC0C1E727DCB00D50413 /* Settings Icon.png in Resources */,
+				4749FDA01EFD2F050047E184 /* Icon - Email.png in Resources */,
+				4748BC091E727DCB00D50413 /* My Team Icon.png in Resources */,
+				47D3F8F91EDACFF800AC3E26 /* ClockWork Words.png in Resources */,
+				4749FDA41EFD2F050047E184 /* Lock Icon.png in Resources */,
+				4786809D1F04C6F800054479 /* StockSnap_ZP1TM2CZCK - Copy.jpg in Resources */,
 				4748BB831E6412F100D50413 /* LaunchScreen.storyboard in Resources */,
+				47D0D4AB1EA80F4800466759 /* abstract-rhombic-texture-background-iphone-6-plus-wallpaper.png in Resources */,
 				4748BB801E6412F100D50413 /* Assets.xcassets in Resources */,
+				47A419DA1F58CBBE00EDD05B /* processbar.gif in Resources */,
+				4748BC121E761A8C00D50413 /* ClockWork Logo.png in Resources */,
+				4748BC0A1E727DCB00D50413 /* Profile Icon.png in Resources */,
+				4749FDA11EFD2F050047E184 /* Icon - Sign Up Business Button.png in Resources */,
+				4748BC0B1E727DCB00D50413 /* Remove Ads Icon.png in Resources */,
+				4749FDA21EFD2F050047E184 /* Icon - Sign Up Staff Button.png in Resources */,
+				4748BC081E727DCB00D50413 /* Home Icon.png in Resources */,
+				4749FD9F1EFD2F050047E184 /* Icon - Company Name.png in Resources */,
+				4748BC071E727DCB00D50413 /* Export Icon.png in Resources */,
 				4748BB7E1E6412F100D50413 /* Main.storyboard in Resources */,
+				4748BC001E72025B00D50413 /* Hamburger Icon.png in Resources */,
+				4749FDA31EFD2F050047E184 /* Icon - Your Name Field.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +546,187 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A0FB68EFA3514966206CE6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1C23C76E1C371F55FE4A1480 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockworkTests/Pods-ClockworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		370AAA765C48688C557B3ADE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockworkUITests/Pods-ClockworkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72FE78D5BB490DC86A38DC97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F08C2B78BDBC6CAB5C79F1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clockwork/Pods-Clockwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F58CCA4B25DB89EC198B30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockworkUITests/Pods-ClockworkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8F032F96C96C1A92E7C221C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clockwork/Pods-Clockwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47DB685CD2E4F86AB9F9AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBF045E17D83C7619A128AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockworkTests/Pods-ClockworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4748BB711E6412F100D50413 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4748BB7B1E6412F100D50413 /* ViewController.swift in Sources */,
+				47D526A91EDF7F47009F9021 /* WorkerStampCollectionViewCell.swift in Sources */,
+				47A419D41F58226700EDD05B /* Profile.swift in Sources */,
+				47A980081EFF6E6D00CE8802 /* Shift.swift in Sources */,
+				47A9800A1EFF701100CE8802 /* ItemMaker.swift in Sources */,
+				47A419D81F58B59600EDD05B /* TimePickerViewController.swift in Sources */,
+				4704B5451F67269A00F404A5 /* DaySelectViewController.swift in Sources */,
+				4748BBF51E6D129D00D50413 /* WorkerHomeViewController.swift in Sources */,
+				47CD1C0E1F0340C800F7EE4F /* WorkerProfileViewController.swift in Sources */,
+				4704B5431F6690AD00F404A5 /* MyTeamCell.swift in Sources */,
 				4748BB791E6412F100D50413 /* AppDelegate.swift in Sources */,
+				47A980061EFF5EF700CE8802 /* Project.swift in Sources */,
+				47E6A7361F6D0C08004CB536 /* AddSftaffViewController.swift in Sources */,
+				47D526A51EDE93FF009F9021 /* StartViewController.swift in Sources */,
+				4748BC101E75F3E100D50413 /* WorkerHistoryViewController.swift in Sources */,
+				47A419E01F5BE62700EDD05B /* GetShiftInfo.swift in Sources */,
+				4748BBB41E695F4A00D50413 /* Model.xcdatamodeld in Sources */,
+				47F67E471F031D3900CEBD7A /* ExportViewController.swift in Sources */,
+				476BB99A1EBC3083009E7AE1 /* Item.swift in Sources */,
+				474A5F651F0397030088124B /* WorkerSettingViewController.swift in Sources */,
+				474A5F691F03A9500088124B /* Sql.swift in Sources */,
+				47D3F8FD1EDBC7F600AC3E26 /* SignUpViewController.swift in Sources */,
+				47A419DC1F590BC200EDD05B /* LoadingViewController.swift in Sources */,
+				47A419D61F582A4700EDD05B /* Act.swift in Sources */,
+				47A419E21F5BFD0200EDD05B /* LoginResult.swift in Sources */,
+				47A419CD1F58104200EDD05B /* Setting.swift in Sources */,
+				47BFA1121EFC6C9D00DD6FA3 /* Request.swift in Sources */,
+				47B312651F045D1500ACB3A8 /* SignInViewController.swift in Sources */,
+				4748BBF71E6D18A100D50413 /* WorkerSiteCollectionViewCell.swift in Sources */,
+				474A5F671F03A1530088124B /* Pref.swift in Sources */,
+				47A419D21F581CAD00EDD05B /* LoginInfo.swift in Sources */,
+				4704B5411F663C0700F404A5 /* MyTeamViewController.swift in Sources */,
+				47A419DE1F5A182D00EDD05B /* Api.swift in Sources */,
+				4748BBFE1E71754300D50413 /* Toast.swift in Sources */,
+				4748BBF31E6A54A800D50413 /* DatabaseController.swift in Sources */,
+				478D7C781F01DD410095A868 /* MyDate.swift in Sources */,
+				4748BBF91E6D39BE00D50413 /* ScannerViewController.swift in Sources */,
+				4748BC0E1E7402F500D50413 /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +876,10 @@
 		};
 		4748BB9E1E6412F200D50413 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DEAD02C53337B491859A05 /* Pods-Clockwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ADSE6Z7B6Q;
 				INFOPLIST_FILE = Clockwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Udenconstruction.co.nz.Clockwork;
@@ -422,8 +890,10 @@
 		};
 		4748BB9F1E6412F200D50413 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDB597BE5518A9D719784C1 /* Pods-Clockwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ADSE6Z7B6Q;
 				INFOPLIST_FILE = Clockwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Udenconstruction.co.nz.Clockwork;
@@ -434,6 +904,7 @@
 		};
 		4748BBA11E6412F200D50413 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182900AA0AE562FAE0168FAD /* Pods-ClockworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +919,7 @@
 		};
 		4748BBA21E6412F200D50413 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BF18E0F0E7DE1361CB3F1F /* Pods-ClockworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +934,7 @@
 		};
 		4748BBA41E6412F200D50413 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D6BE948084ED3B2DC72DB0 /* Pods-ClockworkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ClockworkUITests/Info.plist;
@@ -475,6 +948,7 @@
 		};
 		4748BBA51E6412F200D50413 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E1E290DF2BBC39980472D9 /* Pods-ClockworkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ClockworkUITests/Info.plist;
@@ -505,6 +979,7 @@
 				4748BB9F1E6412F200D50413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4748BBA01E6412F200D50413 /* Build configuration list for PBXNativeTarget "ClockworkTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +988,7 @@
 				4748BBA21E6412F200D50413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4748BBA31E6412F200D50413 /* Build configuration list for PBXNativeTarget "ClockworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,8 +997,22 @@
 				4748BBA51E6412F200D50413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4748BBB21E695F4A00D50413 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4748BBB31E695F4A00D50413 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4748BBB31E695F4A00D50413 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4748BB6D1E6412F100D50413 /* Project object */;
 }

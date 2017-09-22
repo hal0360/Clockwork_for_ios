@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Notice" representedClassName="Notice" syncable="YES" codeGenerationType="class">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Site" representedClassName="Site" syncable="YES" codeGenerationType="class">
+        <attribute name="bossId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stamps" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stamp" inverseName="site" inverseEntity="Stamp" syncable="YES"/>
+    </entity>
+    <entity name="Stamp" representedClassName="Stamp" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="siteName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="stopped" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="workerId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="site" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Site" inverseName="stamps" inverseEntity="Site" syncable="YES"/>
+        <relationship name="worker" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Worker" inverseName="stamps" inverseEntity="Worker" syncable="YES"/>
+    </entity>
+    <entity name="Worker" representedClassName="Worker" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="workerId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stamps" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stamp" inverseName="worker" inverseEntity="Stamp" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Site" positionX="-405" positionY="315" width="128" height="88"/>
+        <element name="Stamp" positionX="-135" positionY="225" width="128" height="178"/>
+        <element name="Worker" positionX="144" positionY="221" width="128" height="133"/>
+        <element name="Notice" positionX="-198" positionY="297" width="128" height="75"/>
+    </elements>
+</model>

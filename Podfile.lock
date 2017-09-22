@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.5.0)
+  - EVReflection/Alamofire (4.16.3):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/Core (4.16.3)
+  - EVReflection/Moya (4.16.3):
+    - EVReflection/Alamofire
+    - Moya
+  - EVReflection/MoyaRxSwift (4.16.3):
+    - EVReflection/Moya
+    - Moya/RxSwift
+  - Moya (8.0.5):
+    - Moya/Core (= 8.0.5)
+  - Moya/Core (8.0.5):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (8.0.5):
+    - Moya/Core
+    - RxSwift (~> 3.0)
+  - Result (3.2.3)
+  - RxSwift (3.5.0)
+
+DEPENDENCIES:
+  - EVReflection/MoyaRxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  EVReflection: 78a60b3c628a2e765652cdc554a903a3e40b16c8
+  Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+
+PODFILE CHECKSUM: 0110afbed1e140e71dad51f498b37d2c6621adc3
+
+COCOAPODS: 1.2.1

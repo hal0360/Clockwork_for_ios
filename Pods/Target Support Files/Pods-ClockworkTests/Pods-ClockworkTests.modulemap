@@ -1,0 +1,6 @@
+framework module Pods_ClockworkTests {
+  umbrella header "Pods-ClockworkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
