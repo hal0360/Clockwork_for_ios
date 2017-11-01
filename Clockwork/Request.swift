@@ -9,13 +9,23 @@
 import Foundation
 import Alamofire
 
+
+extension String: ParameterEncoding {
+    
+    public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
+        var request = try urlRequest.asURLRequest()
+        request.httpBody = data(using: .utf8, allowLossyConversion: false)
+        return request
+    }
+    
+}
+
+
 class Request{
     
     var alertController: UIAlertController
     var contex: UIViewController
     var blocked: Bool
-    
-    
     
     struct JSONStringArrayEncoding: ParameterEncoding {
         private let myString: String
@@ -36,10 +46,8 @@ class Request{
             urlRequest?.httpBody = data
             
             return urlRequest!
-        }}
-    
-    
-    
+        }
+    }
     
     init(contex: UIViewController, blocked: Bool){
         self.contex = contex
@@ -52,52 +60,47 @@ class Request{
         alertController.view.addSubview(spinnerIndicator)
     }
     
-    func post(url: String, json: String, auth: String?, callback: @escaping (_ response: DataResponse<String>) -> ()){
-        var request = URLRequest(url: URL(string: url)!)
-        request.httpMethod = HTTPMethod.post.rawValue
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    func post(url: String, json: String, auth: String, callback: @escaping (_ response: DataResponse<String>) -> ()){
+        var headers = ["Content-Type": "application/json"]
         
-        if(auth != nil){
-            request.setValue("Basic \(auth)", forHTTPHeaderField: "Authorization")
+        if(auth != ""){
+            headers = ["Content-Type": "application/json", "Authorization": "Basic \(auth)"]
         }
-        let data = (json.data(using: .utf8))! as Data
-        request.httpBody = data
+       
         
-        if blocked{
-          contex.present(alertController, animated: false, completion: nil)
-        }
-        
-        
-        Alamofire.request(request).responseString { (response) in
-            if self.blocked{
-               self.alertController.dismiss(animated: true, completion: nil)
-            }
-            callback(response)
-            
-        }
-        
-        
-        
-        //Alamofire.request("your url string", method: .post, parameters: [:], encoding: JSONStringArrayEncoding.init(string: "My string for body"), headers: [:])
-        
-        
-    }
-    
-    func get(url: String, auth: String?, callback: @escaping (_ response: DataResponse<String>) -> ()){
-        
-        var request = URLRequest(url: URL(string: url)!)
-        request.httpMethod = HTTPMethod.get.rawValue
-        if(auth != nil){
-            request.setValue("Basic \(auth)", forHTTPHeaderField: "Authorization")
-        }
         if blocked{
             contex.present(alertController, animated: false, completion: nil)
         }
-        Alamofire.request(request).responseString { (response) in
+        
+
+        Alamofire.request(url, method: .post, parameters: [:], encoding: json, headers: headers).responseString { (response) in
             if self.blocked{
                 self.alertController.dismiss(animated: true, completion: nil)
             }
             callback(response)
         }
+
     }
+    
+    
+    func get(url: String, auth: String, callback: @escaping (_ response: DataResponse<String>) -> ()){
+        var headers = ["Content-Type": "application/json"]
+        
+        if(auth != ""){
+            headers = ["Content-Type": "application/json", "Authorization": "Basic \(auth)"]
+        }
+        
+        if blocked{
+            contex.present(alertController, animated: false, completion: nil)
+        }
+        
+        Alamofire.request(url, method: .get, headers: headers).responseString { (response) in
+            if self.blocked{
+                self.alertController.dismiss(animated: true, completion: nil)
+            }
+            callback(response)
+        }
+        
+    }
+    
 }

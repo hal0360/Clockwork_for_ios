@@ -8,29 +8,22 @@
 
 import UIKit
 
-class CommentViewController: UIViewController {
+class CommentViewController: RootViewController {
 
-    
     @IBOutlet weak var commentLabelTitle: UILabel!
     @IBOutlet weak var commentTextView: UITextView!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         commentLabelTitle.text = "Check out from: " + Act.current()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
     @IBAction func saveComment(_ sender: Any) {
         
         
-        let parentView = self.parent as! WorkerHomeViewController
+        let parentView = self.parent as! MainViewController
  
         parentView.updateStamp(c: commentTextView.text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))
        // print(commentTextView.text)

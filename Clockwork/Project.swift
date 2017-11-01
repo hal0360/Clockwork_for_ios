@@ -11,8 +11,8 @@ import EVReflection
 
 class Project: EVObject {
     
-    var businessId: String?
-    var qrCodeIdentifier: String?
+    var businessId: String = ""
+    var qrCodeIdentifier: String = ""
     
     required init() {
         

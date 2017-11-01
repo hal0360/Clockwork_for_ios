@@ -8,28 +8,39 @@
 
 import UIKit
 
-class TimePickerViewController: UIViewController {
+class TimePickerViewController: RootViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var timePicker: UIDatePicker!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat =  "yyyy-MM-dd HH:mm:ss"
+        
+        if(Temp.clkInSel){
+            timePicker.date = dateFormatter.date(from: Clock.cin())!
+        }
+        else{
+            timePicker.date = dateFormatter.date(from: Clock.cout())!
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func confirm(_ sender: Any) {
+        
+        let formatter = DateFormatter()
+        // initially set the format based on your datepicker date
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let dateString = formatter.string(from: timePicker.date)
+        
+        if(Temp.clkInSel){
+            Notify.setIn(dateIn: timePicker.date)
+            Clock.cin(val: dateString)
+        }
+        else{
+            Notify.setOut(dateOut: timePicker.date)
+            Clock.cout(val: dateString)
+        }
+        self.view.removeFromSuperview()
     }
-    */
-
 }

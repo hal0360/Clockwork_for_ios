@@ -59,7 +59,13 @@ class Profile {
     }
     
     class func company() -> String{
-        return Pref.getStr(key: "company")
+        let temp = Pref.getStr(key: "company")
+        if temp == "" {
+            return "N/A"
+        }
+        else{
+            return temp
+        }
     }
     
     class func company(val: String){
@@ -75,6 +81,6 @@ class Profile {
     }
   
     class func logout(){
-        
+        role(val: 0)
     }
 }

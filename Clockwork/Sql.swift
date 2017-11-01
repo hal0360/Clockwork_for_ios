@@ -35,6 +35,12 @@ class Sql {
         save()
     }
     
+    class func delete(objs: [NSManagedObject]){
+        for obj in objs {
+             getContex().delete(obj)
+        }
+        save()
+    }
     
     class func getContex() -> NSManagedObjectContext {
         return persistentContainer.viewContext

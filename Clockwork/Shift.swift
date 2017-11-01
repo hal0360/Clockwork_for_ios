@@ -11,11 +11,12 @@ import EVReflection
 
 class Shift: EVObject {
     
-    var qrCodeIdentifier: String?
-    var shiftTimeStartOnUtc: String?
-    var shiftTimeEndOnUtc: String?
-    var comment: String?
-    var userId: String?
+    var qrCodeIdentifier: String = ""
+    var shiftTimeStartOnUtc: String = ""
+    var shiftTimeEndOnUtc: String = ""
+    var comment: String = ""
+    var userId: String = ""
+    var userName: String = ""
     
     required init() {
         let date = NSDate()

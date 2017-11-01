@@ -8,9 +8,8 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: RootViewController {
 
-    
     @IBOutlet weak var SignUpForm: UIView!
     @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -18,43 +17,22 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPassField: UITextField!
     @IBOutlet weak var userTwoField: UITextField!
     
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        NotificationCenter.default.addObserver(self, selector: #selector(SignUpViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(SignUpViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
         SignUpForm.layer.borderWidth = 1
         SignUpForm.layer.borderColor = UIColor.white.cgColor
         SignUpForm.layer.cornerRadius = 6
-        
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.dismissKeyboard))
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
         
         userField.attributedPlaceholder = NSAttributedString(string: userField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         userTwoField.attributedPlaceholder = NSAttributedString(string: userField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         emailField.attributedPlaceholder = NSAttributedString(string: emailField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         passField.attributedPlaceholder = NSAttributedString(string: passField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         confirmPassField.attributedPlaceholder = NSAttributedString(string: confirmPassField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
-        
     }
     
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-    
-    func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0{
-                self.view.frame.origin.y -= keyboardSize.height
-            }
-        }
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
     @IBAction func submitForm(_ sender: UIButton) {
@@ -90,20 +68,15 @@ class SignUpViewController: UIViewController {
             return
         }
         
-    
          let loginInfo: LoginInfo = LoginInfo(fName: usrName, lName: usrTwoName, mail: usrEmail, pass: usrPass)
         let request = Request(contex: self, blocked: true)
-         request.post(url: "https://clockwork-api.azurewebsites.net/v1/authentication/create", json: loginInfo.toJsonString(), auth: nil) { response in
+         request.post(url: "https://clockwork-api.azurewebsites.net/v1/authentication/create", json: loginInfo.toJsonString(), auth: "") { response in
          
            let code = response.response?.statusCode
          
            if(code == 204){
              Toast.show(contex: self, message: "Login succesful")
-            
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let toController = storyBoard.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
-            self.present(toController, animated:true, completion:nil)
-            
+             Kit.goTo(contex: self, id: "SignInVC")
            }
            else if (code == 400){
              Toast.show(contex: self, message: "Error: email already existed")
@@ -113,19 +86,4 @@ class SignUpViewController: UIViewController {
            }
          }
     }
-    
-    
-    func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += keyboardSize.height
-            }
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }

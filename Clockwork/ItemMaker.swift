@@ -49,6 +49,30 @@ class ItemMaker{
         return itemArray
     }
     
+    class func getStampItems() -> Array<StampItem>{
+        var item: StampItem
+        var itemArray = Array<StampItem>()
+        let stamps = getStamps()
+        var dateStr = ""
+        var compStr = "sdfdfgsfsfdsfss"
+        
+        for stamp in stamps{
+            dateStr = MyDate.stampFormat(date: stamp.startTime as! Date)
+            if dateStr != compStr{
+                item = StampItem(type: 0)
+                item.date = dateStr
+                item.total = MyDate.getWeekDay(date: stamp.startTime as! Date)
+                compStr = dateStr
+            }
+            else{
+                item = StampItem(type: 1)
+                item.model = stamp
+            }
+            itemArray.append(item)
+        }
+        return itemArray
+    }
+    
     class func getStamps() -> Array<Stamp>{
         let stuffStamps = Sql.load(entity: "Stamp") as! Array<Stamp>
         return stuffStamps.sorted(by: { $0.startTime?.compare($1.startTime as! Date) == .orderedDescending})

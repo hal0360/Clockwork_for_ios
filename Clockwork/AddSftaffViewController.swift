@@ -8,24 +8,15 @@
 
 import UIKit
 
-class AddSftaffViewController: UIViewController {
+class AddSftaffViewController: RootViewController {
 
-    
     @IBOutlet weak var qrImage: UIImageView!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-       
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         qrImage.image = generateQRCode(from: Profile.userID())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     func generateQRCode(from string: String) -> UIImage? {
         let data = string.data(using: String.Encoding.ascii)
@@ -42,5 +33,7 @@ class AddSftaffViewController: UIViewController {
         return nil
     }
 
-
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }

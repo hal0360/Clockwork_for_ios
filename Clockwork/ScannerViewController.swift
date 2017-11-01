@@ -77,6 +77,7 @@ class ScannerViewController: UIViewController , AVCaptureMetadataOutputObjectsDe
     }
     
     func canceling(sender: UIButton!) {
+        Temp.QRcode = ""
         Act.newSite(val: "")
         captureSession.stopRunning()
         dismiss(animated: true)
@@ -98,9 +99,11 @@ class ScannerViewController: UIViewController , AVCaptureMetadataOutputObjectsDe
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             let gotit: String = readableObject.stringValue.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
             Act.newSite(val: gotit)
+            Temp.QRcode = gotit
         }
         else{
             Act.newSite(val: "")
+            Temp.QRcode = ""
         }
         dismiss(animated: true)
     }

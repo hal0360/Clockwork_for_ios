@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExportViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ExportViewController: RootViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var periodPicker: UIPickerView!
     @IBOutlet weak var projectPicker: UIPickerView!
@@ -44,48 +44,26 @@ class ExportViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         }else {
             return users.count
         }
-        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //will do it later
     }
     
-
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         let sites = Sql.load(entity: "Site")
         for site in sites as! [Site]{
             projects.append(site.name!)
         }
-        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     @IBAction func cancel(_ sender: Any) {
         self.view.removeFromSuperview()
     }
     
-    
     @IBAction func export(_ sender: Any) {
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

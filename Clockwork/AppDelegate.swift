@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,8 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          popLast.didMove(toParentViewController: self.parent?.parent)
          
          
-         
-         
          */
         
         //  let date = Date()
@@ -51,6 +50,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // let resultdt = formatter.string(from: date)
         // print(resultdt)
         
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        
+        
+        //Profile.role(val: 1)
+        
+        if Profile.role() != 0{
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainVC")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
         
         
         
